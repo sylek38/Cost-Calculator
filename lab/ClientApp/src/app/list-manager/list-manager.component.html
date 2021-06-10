@@ -1,0 +1,35 @@
+
+
+<section class="section">
+    <div class="section__container container col">
+      <form>
+        <h2 class="section__title">New Item</h2>
+        <div class="card row">
+  
+          <input [(ngModel)]="productName" name="product" class="card__product" type="text" value="" placeholder="Product name">
+          <input [(ngModel)]="productPrice" name="price" class="card__price" type="number" value="" placeholder="Price">
+          <input [(ngModel)]="productAmount" name="amount"class="card__amount" type="number" value="" placeholder="Quantity">
+  
+          <button (click)="addToList()">
+            <i class="fas fa-plus-circle"></i>
+            Add
+          </button>
+  
+          <app-sum-view [sum]="sum">{{sum}}</app-sum-view>
+  
+          <ul class="card__items">
+            <li class="card__item" *ngFor="let item of items">
+  
+              <app-item [item]="item"></app-item>
+  
+            </li>
+          </ul>
+  
+        </div>
+      </form>
+    </div>
+  
+  </section>
+  
+  
+  

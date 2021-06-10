@@ -1,0 +1,7 @@
+.item * + * {
+    margin-top: 1em;
+  }
+  
+  .item + .item {
+    margin-top: 1em;
+  }/*# sourceMappingURL=item.component.css.map */

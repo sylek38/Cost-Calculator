@@ -1,0 +1,12 @@
+.sum-view {
+    background-color: white;
+    padding: 2em 0;
+    border-radius: 4px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    margin: 2em 0;
+  }
+  .sum-view__title {
+    color: #833ab4;
+    font-size: 2em;
+    font-weight: bold;
+  }/*# sourceMappingURL=sum-view.component.css.map */

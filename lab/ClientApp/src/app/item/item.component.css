@@ -4,4 +4,10 @@
   
   .item + .item {
     margin-top: 1em;
-  }/*# sourceMappingURL=item.component.css.map */
+  }
+  /* }# sourceMappingURL=item.component.css.map */
+
+  .item {
+    padding: 2em;
+    /* border: 1px solid blue; */
+  }

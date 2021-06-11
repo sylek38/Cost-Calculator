@@ -15,11 +15,17 @@
 }
 .section__title {
   color: #833ab4;
+  font-weight: bold;
 }
 
-.section .row {
-  display: flex;
-  padding: 1.5em 2em;
+form {
+  width: 100%;
+  
+}
+
+.section .card {
+  border: none;
+  width: 60%;
 }
 .section .col {
   display: flex;
@@ -75,3 +81,7 @@ li {
 li:hover {
   box-shadow: 0 0 6px rgba(131, 58, 180, 0.6);
 }/*# sourceMappingURL=list-manager.component.css.map */
+
+.card__name {
+  padding: 1em;
+}

@@ -4,8 +4,6 @@
       <div class="card">
       <form method="POST" action="data">
         
-        
-  
           <input [(ngModel)]="productName" name="product" class="card__product" type="text" value="" placeholder="Product name">
           <input [(ngModel)]="productPrice" name="price" class="card__price" type="number" value="" placeholder="Price">
           <input [(ngModel)]="productAmount" name="amount"class="card__amount" type="number" value="" placeholder="Quantity">
@@ -28,8 +26,6 @@
               </thead>
               <tbody>
             <tr *ngFor="let item of items">
-  
-              <!-- <app-item [item]="item"></app-item> -->
 
               <td class="item">
                 {{ item.productName }} 
@@ -44,24 +40,6 @@
             </tr>
           </tbody>
           </table>
-
-  
-        
-      
     </div>
-<!--     
-    <table class="table">
-      <th>Name</th><th>Price</th><th>Amount</th>
-      <tr>
-        <td>Name</td>
-        <td>Price</td>
-        <td>Amount</td>
-      </tr>
-      <tr>
-        <td>Name</td>
-        <td>Price</td>
-        <td>Amount</td>
-      </tr>
-    </table> -->
   
   </section>

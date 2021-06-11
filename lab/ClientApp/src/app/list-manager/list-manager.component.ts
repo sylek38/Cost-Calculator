@@ -1,4 +1,4 @@
-import { Component, OnInit, Inject } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Item } from '../interfaces/item';
 import { CalcService } from '../calc.service';
 import { AppService } from '../app.service';
@@ -12,8 +12,8 @@ export class ListManagerComponent implements OnInit {
 
   constructor(
     private _calcService: CalcService,
-    private _appService: AppService,
-    @Inject('BASE_URL') baseUrl: string) { }
+    private _appService: AppService
+    ) { }
 
   sum: number;
   productName: string;
@@ -45,7 +45,5 @@ export class ListManagerComponent implements OnInit {
     })
 
     this.sum = this._calcService.count(this.items);
-  
   }
-
 }

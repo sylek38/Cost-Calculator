@@ -2,7 +2,7 @@
     <div class="section__container container col">
       <h2 class="section__title">New Item</h2>
       <div class="card">
-      <form>
+      <form method="POST" action="data">
         
         
   
@@ -10,26 +10,24 @@
           <input [(ngModel)]="productPrice" name="price" class="card__price" type="number" value="" placeholder="Price">
           <input [(ngModel)]="productAmount" name="amount"class="card__amount" type="number" value="" placeholder="Quantity">
   
-          <button (click)="addToList()">
+          <button (click)="addToList()" value="" name="cta-btn" type="submit">
             <i class="fas fa-plus-circle"></i>
             Add
           </button>
           
         </form>
-     
           <app-sum-view [sum]="sum">{{sum}}</app-sum-view>
         </div>
-          <!-- <table class="card__items"> -->
-            <table class="table">
+            <table class="table" *ngIf="items[0]">
               <thead>
                 <tr>
-                <th class="card__name">Name</th>
-                <th class="card__name">Price</th>
-                <th class="card__name">Amount</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Amount</th>
               </tr>
               </thead>
               <tbody>
-            <tr class="" *ngFor="let item of items">
+            <tr *ngFor="let item of items">
   
               <!-- <app-item [item]="item"></app-item> -->
 
@@ -42,7 +40,6 @@
               <td class="item">
                   {{ item.productAmount }}
               </td>
-
   
             </tr>
           </tbody>

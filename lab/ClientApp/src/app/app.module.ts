@@ -11,7 +11,6 @@ import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { ListManagerComponent } from './list-manager/list-manager.component';
 import { SumViewComponent } from './sum-view/sum-view.component';
-import { ItemComponent } from './item/item.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +21,6 @@ import { ItemComponent } from './item/item.component';
     FetchDataComponent,
     ListManagerComponent,
     SumViewComponent,
-    ItemComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
